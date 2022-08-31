@@ -1,0 +1,467 @@
+<!-- <div class="main-content">
+  <div class="back">
+    <mat-icon >arrow_back</mat-icon>
+    <a class="arr-content" routerLink="/page2">Claim Prediction result</a>
+  </div>
+
+<hr>
+<div class="row">
+  <div class="col" id="border">
+     <p>{{patientDetail.name}}</p> -->
+<!-- <p>Patient Id - PID7502</p> -->
+<!-- </div> -->
+<!-- <div class="col">
+   <p>Age</p>
+   <p>56</p>
+  </div>
+  <div class="col">
+    <p>Gender</p>
+    <p>Male</p>
+  </div>
+  <div class="col">
+    <p>Marital Status</p>
+    <p>Yes</p>
+  </div>
+  <div class="col">
+    <p>Revenue Code</p>
+    <p>810</p>
+  </div>
+  <div class="col">
+    <p>Service Code</p>
+    <p>RLBY</p>
+  </div>
+  <div class="col">
+    <p>Procedure Code</p>
+    <p>96411</p>
+  </div>
+  <div class="col">
+    <p>Diagnosis Code</p>
+    <p>29690</p>
+  </div>
+  <div class="col" id="border">
+    <p>Subscriber Index</p>
+    <p>3224750</p>
+  </div>
+  <div class="col" >
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary">Edit info</button>
+  </div>
+  <hr>
+
+  <div class="alert">
+    <mat-icon id="icon">report</mat-icon>
+    <a class="pos">This Claim Is Denied</a>
+  </div>
+
+  <div class="cards">
+    <div class="row">
+      <div class="col">
+        <mat-card>
+          <div class="row">
+            <div class="col-sm-2" style=" display: flex; justify-content: center;align-self: center; height:50px">
+              <i class="bi bi-percent icon" style="font-size:2.5rem;color:white " id="boots-icon"></i>
+              
+            </div>
+            <div class="col-sm-10">
+              <p class="fnt-size">ML Accuracy</p>
+              <p>99.95434276757491%</p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col">
+        <div class="col">
+          <mat-card>
+            <div class="row">
+              <div class="col-sm-2" style=" display: flex; justify-content: center;align-self: center; height:50px ">
+                <i class="bi bi-currency-dollar" style="font-size:2.5rem; color:white " id="boots-icon"></i>
+              </div>
+              <div class="col-sm-10">
+                <p>Denied Charge</p>
+              <p>3560.29%</p>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="col">
+          <mat-card>
+            <div class="row">
+              <div class="col-sm-2" style=" display: flex; justify-content: center;align-self: center;  height:50px">
+                <i class="bi bi-bag-plus" style="font-size:2.5rem; color:white " id="boots-icon"></i>
+              </div>
+              <div class="col-sm-10">
+                <p>Denied CPT</p>
+                <p>8369590</p>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+
+      </div>
+
+  </div><br>
+  <div class="card" ><br>
+    <h3><b>Histogram of Denied Charges- Last 7 Months</b></h3>
+    <hr>
+    <div id="chart">
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [dataLabels]="chartOptions.dataLabels"
+        [plotOptions]="chartOptions.plotOptions"
+        [yaxis]="chartOptions.yaxis"
+        [xaxis]="chartOptions.xaxis"
+        [fill]="chartOptions.fill"
+        [title]="chartOptions.title"
+      ></apx-chart>
+    </div>
+   </div>
+</div> -->
+
+<div class="main-content">
+  <!-- <div class="back">
+    <mat-icon >arrow_back</mat-icon>
+    <a class="arr-content" routerLink="/page2">Claim Prediction result</a>
+  </div> -->
+
+  <hr />
+  <div class="row">
+    <div class="col" id="border">
+      <h5 style="color: blue;">{{ patientDetail.name }}</h5>
+      <!-- <p>
+        <b>{{ patientDetail.name }}</b>
+      </p> -->
+      <p>Patient Id - PID7502</p>
+    </div>
+    <div class="col">
+      <p><b>Age</b></p>
+      <p>{{ patientDetail.age }} Year</p>
+    </div>
+    <div class="col">
+      <p><b>Blood Pressure</b></p>
+      <p>{{ patientDetail.systolic }}/{{ patientDetail.diastolic }} (mm Hg)</p>
+    </div>
+    <div class="col">
+      <p><b>Gender</b></p>
+      <p>{{ patientDetail.gender }}</p>
+    </div>
+    <div class="col">
+      <p><b>Smoking Habit</b></p>
+      <p>{{ patientDetail.smoking_habit }}</p>
+    </div>
+    <div class="col">
+      <p><b>Avg Glucose</b></p>
+      <p>{{ patientDetail.avg_glucose_level }} (mmol/L)</p>
+    </div>
+    <div class="col">
+      <p><b>BMI</b></p>
+      <p>{{ patientDetail.bmi }} (Kg/m^2)</p>
+    </div>
+    <div class="col">
+      <p><b>Cholesterol_LDL</b></p>
+      <p>{{ patientDetail.cholesterol_LDL }} (mg/dL)</p>
+    </div>
+    <div class="col" id="border">
+      <p><b>Cholesterol_HDL</b></p>
+      <p>{{ patientDetail.cholesterol_HDL }} (mg/dL)</p>
+    </div>
+    <!-- <div class="col" >
+  </div> -->
+    <!-- <div class="col">
+    <p>Procedure Code</p>
+    <p>96411</p>
+  </div>
+  <div class="col">
+    <p>Diagnosis Code</p>
+    <p>29690</p>
+  </div>
+  <div class="col" id="border">
+    <p>Subscriber Index</p>
+    <p>3224750</p>
+  </div> -->
+
+    <div class="col">
+      <button type="button" class="btn btn-default" (click)="downloadMyFile()"><img class="imgD" src="assets/download.png"> <h4 style="color:black ;">Dataset</h4></button>
+
+      <!-- <a
+        img src="download.png"
+        href="assets/healthcare-dataset.csv"
+        target="_blank"
+        download="download.csv"
+        >Download</a
+        > -->
+        <!-- <button (click)="downloadMyFile()">download File<button></button> -->
+     </div> 
+    <hr />
+
+    <div class="alert">
+      <!-- <mat-icon id="icon">report</mat-icon> -->
+      <!-- <a class="pos">Patient has a 78% chance of getting stroke</a> -->
+      <div *ngIf="msgalert1">
+        <p style="color: blue; font-weight: bold; font-size: 18px">
+          {{ msgshow }}
+        </p>
+      </div>
+      <div *ngIf="msgalert">
+        <p style="color: red; font-weight: bold; font-size: 18px">
+          {{ msgshow }}
+        </p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="row">
+        <!-- <div class="col">
+        <mat-card> -->
+        <!-- <div class="row">
+            <div class="col-sm-2" style=" display: flex; justify-content: center;align-self: center; height:50px">
+              <i class="bi bi-percent icon" style="font-size:2.5rem;color:white " id="boots-icon"></i>
+              
+            </div> -->
+        <!-- <div class="col-sm-10">
+              <p class="fnt-size">ML Accuracy</p>
+              <p>99.95434276757491%</p>
+            </div> -->
+        <!-- </div>
+        </mat-card> -->
+        <!-- </div> -->
+        <!-- <div class="col">
+        <div class="col">
+          <mat-card>
+            <div class="row">
+              <div class="col-sm-2" style=" display: flex; justify-content: center;align-self: center; height:50px ">
+                <i class="bi bi-currency-dollar" style="font-size:2.5rem; color:white " id="boots-icon"></i>
+              </div>
+              <div class="col-sm-10">
+                <p>Denied Charge</p>
+              <p>3560.29%</p>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="col">
+          <mat-card>
+            <div class="row">
+              <div class="col-sm-2" style=" display: flex; justify-content: center;align-self: center;  height:50px">
+                <i class="bi bi-bag-plus" style="font-size:2.5rem; color:white " id="boots-icon"></i>
+              </div>
+              <div class="col-sm-10">
+                <p>Denied CPT</p>
+                <p>8369590</p>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+
+      </div> -->
+        <div class="row">
+          <div class="col-8 sunny" style="float: left">
+            <h4 style="font-size: large; font-weight: 550">
+              Patient vs Healthy Person Graph
+            </h4>
+            <hr />
+            <!-- <div>
+          <div>
+            <div>
+              <div style="display: block">
+                <canvas baseChart [data]="barChartData" [options]="barChartOptions"
+                  [type]="barChartType" (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+              </div>
+              <button mat-button mat-raised-button color="primary" (click)="randomize()">Click ME</button>
+            </div>
+          </div>
+        </div> -->
+            <canvas id="myChart"></canvas>
+
+            <!-- <img class="card-img-top" src="assets/Gra.png"
+
+                alt="Card image cap" /> -->
+          </div>
+          <div class="col-4 sy">
+            <h4 style="font-size: large; font-weight: 550; text-align: center">
+              Ways to Prevent Cardiovascular Stroke
+            </h4>
+            <hr />
+            <div class="suuy">
+              <h5>Maintain a healthy blood pressure</h5>
+              <p>
+                High blood pressure causes wear and tear of the delicate inner lining of your blood vessels. The higher your blood pressure (BP) the greater your risk.
+              </p>
+            </div>
+            <div class="s1">
+              <h5>Monitor your cholesterol (blood lipids)</h5>
+              <p>
+                Cholesterol tend to travel in the fatty acids or lipids present
+                in the blood stream which is named as plaque in medical terms,
+                that can develop in the artery walls apparently decreasing the
+                blood flow to the requisite areas of the body.
+              </p>
+            </div>
+            <div class="s2">
+              <h5>Maintain A Healthy Body Mass Index (BMI)</h5>
+              <p>
+                Body Mass Index (BMI), or the calculation of your weight in
+                kilograms divided by the square of height in meters, is one
+                method of determining if someone is at a healthy weight
+              </p>
+            </div>
+            <div class="s3">
+              <h5>Make exercise a daily habit</h5>
+              <p>
+                Lack of physical activity for a long time is found to cause
+                wide-ranging metabolic and structural changes in the body
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- <div class="row">
+        <div class="card">
+          <br />
+          <h3>
+            <b
+              >Major Reasons for Cardiovascular disease Assessment Graph out of
+              100
+            </b>
+          </h3>
+          <hr />
+          <div id="chart"> -->
+            <!-- <img class="card-img-top" src="assets/pulse.png"
+
+                alt="Card image cap" /> -->
+            <!-- <apx-chart
+              [series]="chartOptionss.series"
+              [chart]="chartOptionss.chart"
+              [dataLabels]="chartOptionss.dataLabels"
+              [plotOptions]="chartOptionss.plotOptions"
+              [yaxis]="chartOptionss.yaxis"
+              [xaxis]="chartOptionss.xaxis"
+              [fill]="chartOptionss.fill"
+              [title]="chartOptionss.title"
+            ></apx-chart>
+          </div>
+        </div> -->
+
+        <!-- <div class=" col-4 mre">
+    <h4 style="font-size: large; font-weight:550"> Download Previous Report</h4>
+    <Hr>
+    <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+    <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+    
+    </i>
+    <div style="flex-direction: column;">
+      <p>MRI Report</p>
+      <p>Uploaded on June 2020</p>
+    </div>
+    <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+    <!-- <i class="bi bi-download"  ></i> -->
+        <!-- </div>
+
+    </div>
+    <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+      <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+      
+      </i>
+      <div style="flex-direction: column;">
+        <p>MRI Report</p>
+        <p>Uploaded on June 2020</p>
+      </div>
+      <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+      <!-- <i class="bi bi-download"  ></i> -->
+        <!-- </div>
+  
+      </div>
+      <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+        <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+        
+        </i>
+        <div style="flex-direction: column;">
+          <p>MRI Report</p>
+          <p>Uploaded on June 2020</p>
+        </div>
+        <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+        <!-- <i class="bi bi-download"  ></i> -->
+        <!--   </div>
+    
+        </div>
+        <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+          <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+          
+          </i>
+          <div style="flex-direction: column;">
+            <p>MRI Report</p>
+            <p>Uploaded on June 2020</p>
+          </div>
+          <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+          <!-- <i class="bi bi-download"  ></i> -->
+        <!--  </div>
+      
+          </div>
+          <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+            <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+            
+            </i>
+            <div style="flex-direction: column;">
+              <p>MRI Report</p>
+              <p >Uploaded on June 2020</p>
+              
+            </div>
+            <div class="le" style="border-bottom: 1px dotted brown;"></div>
+            <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+            <!-- <i class="bi bi-download"  ></i> -->
+        <!--    </div>
+        
+            </div>
+            <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+              <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+              
+              </i>
+              <div style="flex-direction: column;">
+                <p>MRI Report</p>
+                <p>Uploaded on June 2020</p>
+              </div>
+              <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+              <!-- <i class="bi bi-download"  ></i> -->
+        <!--   </div>
+          
+              </div>
+              <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+                <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+                
+                </i>
+                <div style="flex-direction: column;">
+                  <p>MRI Report</p>
+                  <p>Uploaded on June 2020</p>
+                </div>
+                <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+                <!-- <i class="bi bi-download"  ></i> -->
+        <!--<!--     </div>
+            
+                </div>
+                <div style="display: flex;  flex-direction: row; padding-top: 13px;">
+                  <i class="bi bi-file-pdf" style="color: red; font-size: 35px;">
+                  
+                  </i>
+                  <div style="flex-direction: column;">
+                    <p>MRI Report</p>
+                    <p>Uploaded on June 2020</p>
+                  </div>
+                  <div class="position-absolute top-85 end-0" style=" align-items: flex-end; font-size: 25px; margin-right: 20px;">
+                  <!-- <i class="bi bi-download"  ></i> -->
+        <!-- </div> -->
+
+        <!-- </div> -->
+        <!-- <p> Uploaded on June 2020</p> -->
+      </div>
+    </div>
+  </div>
+<!-- </div> -->

@@ -1,0 +1,14 @@
+ul li {
+  list-style: none;
+  padding:10px;
+  float:left
+}
+
+mat-toolbar{
+  background: #373B44;
+}
+.icon{
+
+  position:absolute;
+  right: 30px;
+}

@@ -1,0 +1,79 @@
+mat-icon{
+  font-size:35px;
+}
+.arr-content{
+margin-left: 20px;
+text-decoration: none;
+
+}
+.row{
+  margin-left: 3px;
+}
+#border{
+border-right: 1px solid black;
+
+}
+.pos{
+  position: absolute;
+  top:27px;
+  left: 55px;
+  text-decoration: none;
+  color: red;
+  font-weight: 500;
+  font-size:20px
+}
+.alert{
+  border: 3px solid black;
+  /* background-color:rgb(245, 215, 215) */
+}
+#icon{
+  color: red;
+}
+#boots-icon{
+  font-size:65px
+}
+.col-sm-2{
+  background-color:rgb(137, 137, 247);
+}
+.col-sm-10{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.sy{
+  /* padding-right: 5px; */
+}
+
+.sunny{
+  border-right-color: black;
+}
+.s1{
+  padding-top: 10px;
+}
+.s2{
+  padding-top: 10px;
+}
+
+.s3{
+  padding-top: 10px;
+}
+div h5{
+  color: red;
+  font-weight: 500;
+  font-size: larger;
+}
+
+
+.btn{
+  /* padding: 5px; */
+  padding-right: 5px;
+  /* background-color: black; */
+  color: white;
+  border-radius: 13px;
+}
+
+.imgD{
+  height: 35px;
+  width: 35px;
+  background-color: none;
+}

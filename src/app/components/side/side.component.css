@@ -1,0 +1,36 @@
+
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  .profile-card {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+.foot-content{
+
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: larger;
+  font-weight:500;
+}
+#bi{
+  font-size:25px;
+
+
+}
+mat-icon{
+  font-size:25px;
+}
+ul{
+  margin-top:15px;
+}

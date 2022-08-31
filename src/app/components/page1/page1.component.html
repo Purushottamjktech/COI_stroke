@@ -1,0 +1,158 @@
+<!-- <div class="details">
+  <span>
+    <a class="pat-list">Registered Patients List (402)</a>
+    <a  class="add-pat"> + Add Patient</a>
+  </span>
+</div> -->
+<div>
+  <div class="row">
+    <div class="col-md-12" style="margin-left: 10px; padding-top: 10px;">
+      <h2>Registerd Patient Lists({{patientRecord}})</h2>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="search">
+<div class="left" style="margin-left: 5px;">
+  <mat-icon class="search-icon">search</mat-icon>
+  <input type="text" placeholder="Search..." >
+  <span>
+    <a class="filter-txt" style="margin-left: 10px;"><i class="bi bi-funnel-fill" >Apply Filter</i></a></span>
+</div>
+
+<div class="right">
+
+
+</div>
+</div>
+<hr>
+<div class="main-content">
+ <div class="row">
+  <div class="col-sm-4" *ngFor="let patient of patients;let i=index;">
+    <mat-card class="example-card" >
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img src="assets/man.png" width="60px" height="80px">
+          </div>
+          <div class="col-sm-5"  style="margin-top:40px">
+            <a>{{patient.name}} </a><br>
+            <a>Patient ID - PID{{patient.PID}}</a>
+          </div>
+          <div class="col-sm-5" style="margin-top:40px">
+            <a class="claim-btn" (click)="onButtonClicked(patient)">Disease Prediction </a>
+           </div>
+        </div>
+      </div>
+      <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <p>Age</p>
+              <p>Gender</p>
+              <!-- <p>Diastolic</p> -->
+              <p>Cholesterol</p>
+              <p>Blood Pressure</p>
+              <p>Avg Glucose Level</p>
+
+            </div>
+            <div class="col-sm-5">
+              <p>{{patient.age}} Year</p>
+              <p>{{patient.gender}}</p>
+              <!-- <p>{{patient.diastolic}}</p> -->
+              <p>{{patient.cholesterol_HDL}} (mg/dL)</p>
+              <p>{{patient.systolic}}/{{patient.diastolic}} (mm Hg)</p>
+              <p>{{patient.avg_glucose_level}} (mmol/L)</p>
+            </div>
+            <div class="col-sm-3">
+            </div>
+          </div>
+        </div>
+    </mat-card>  
+    <br>        
+  </div>
+  <!-- <div class="col">
+    <mat-card class="example-card">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img src="assets/man.png" width="60px" height="80px">
+          </div>
+          <div class="col-sm-5"  style="margin-top:40px">
+            <a>Taro Halland </a><br>
+            <a>Patient ID - PID7502</a>
+          </div>
+          <div class="col-sm-5" style="margin-top:40px">
+            <a class="claim-btn" routerLink="/page2">Claim Prediction </a>
+           </div>
+        </div>
+      </div>
+      <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <p>DOB</p>
+              <p>Name</p>
+              <p>Marital Status</p>
+              <p>Insurance ID</p>
+              <p>Insurance Name</p>
+            </div>
+            <div class="col-sm-5">
+              <p>02-22-1992</p>
+              <p>Male</p>
+              <p>Married</p>
+              <p>8956783</p>
+              <p>United Health Group</p>
+            </div>
+            <div class="col-sm-3">
+            </div>
+          </div>
+        </div>
+    </mat-card>          </div>
+  <div class="col">
+    <mat-card class="example-card">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img src="assets/man.png" width="60px" height="80px">
+          </div>
+          <div class="col-sm-5"  style="margin-top:40px">
+            <a>Taro Halland </a><br>
+            <a>Patient ID - PID7502</a>
+          </div>
+          <div class="col-sm-5" style="margin-top:40px">
+            <a class="claim-btn" routerLink="/page2">Claim Prediction </a>
+           </div>
+        </div>
+      </div>
+      <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <p>DOB</p>
+              <p>Name</p>
+              <p>Marital Status</p>
+              <p>Insurance ID</p>
+              <p>Insurance Name</p>
+            </div>
+            <div class="col-sm-5">
+              <p>02-22-1992</p>
+              <p>Male</p>
+              <p>Married</p>
+              <p>8956783</p>
+              <p>United Health Group</p>
+            </div>
+            <div class="col-sm-3">
+            </div>
+          </div>
+        </div>
+    </mat-card>          </div> -->
+</div>
+
+
+
+
+</div>

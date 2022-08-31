@@ -1,0 +1,46 @@
+.example-card {
+  max-width: 400px;
+}
+.det{
+  margin-left: 20px;
+}
+.claim-btn{
+  text-decoration: none;
+  background-color:blue;
+  color:white;
+ padding: 6px;
+border-radius:14px; 
+}
+.pat-list{
+font-size:20px;
+text-decoration:none;
+color: black;
+font-weight:500;
+}
+.add-pat{
+float: right;
+text-decoration:none;
+padding: 8px;
+background-color: rgb(91, 235, 91);
+color: white;
+
+}
+input{
+  width: 25%;
+  height: 30px;
+}
+.search-icon{
+position: absolute;
+left: 10px;
+top: 95px;
+}
+input[type="text"]::placeholder {
+  padding-left: 30px;
+}
+.filter-txt{
+text-decoration:none;
+padding: 6px;
+background-color: rgb(68, 68, 230);
+color: white;
+
+}

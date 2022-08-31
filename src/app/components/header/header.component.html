@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+      <button mat-icon-button (click)="toggleSideBar()">
+          <mat-icon>menu</mat-icon>
+      </button>
+<span style="margin-left:20px"><a style="color:blue">JK</a> <a style="color:white">TECH</a> <sup style="font-size:10px">TM</sup></span>
+
+<div class="icon">
+          <ul>
+              <li>
+                <i class="bi bi-bell-fill"></i>
+              </li>
+
+              <li>
+                  <a  [matMenuTriggerFor]="menu">
+                      <mat-icon>person_outline</mat-icon>
+                  </a>
+                  <mat-menu #menu="matMenu">
+                      <button mat-menu-item>
+                          <mat-icon>exit_to_app</mat-icon>
+                          Sign out
+                      </button>
+                  </mat-menu>
+              </li>
+          </ul>
+        </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>
