@@ -15,7 +15,7 @@ export class HealthPredictionService {
 
   async sendingDataToBackend(): Promise<void> {
     const response = await axios.post(
-      'http://20.198.72.26:5014/predict',
+      'http://20.219.167.202:5014/predict',
       Page3Component.argdata
     );
 
